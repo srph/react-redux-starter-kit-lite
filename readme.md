@@ -89,3 +89,6 @@ This is explicitly set to each config (e.g., server globals, webpack config).
 - [babel](http://babeljs.io) (`v6.1.5`)
 - [redux-devtools](https://github.com/gaearon/redux-devtools/) (`v3.0.0-beta-3`)
 - [redux-devtools-log-monitor](https://github.com/gaearon/redux-devtools/) (`v1.0.0-beta-3`)
+
+## FAQ
+- Where's my `actions`, `reducers`, and `constants`? This repository follows [ducks-modular-redux](https://github.com/erikras/ducks-modular-redux).
