@@ -1,0 +1,46 @@
+{
+  "name": "react-redux-starter-kit-lite",
+  "version": "1.0.0",
+  "description": "A less opinionated react+redux starter kit without server-side rendering and styling.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'No tests.' && exit",
+    "build:script": "node_modules/.bin/webpack -v -d --display-error-details",
+    "watch:script": "node_modules/.bin/webpack -w -v -d --display-error-details",
+    "prod:script": "node_modules/.bin/webpack -p -v -d --display-error-details",
+    "make-app-symlink": "cd node_modules && ln -nsf ../ starter-kit",
+    "prewatch": "npm run make-app-symlink",
+    "postinstall": "npm run make-app-symlink",
+    "prebuild": "npm run make-app-symlink",
+    "start": "npm run build:script && open public/index.html"
+  },
+  "author": "Kier Borromeo <seraphipod@gmail.com> (http://srph.github.io)",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.7.0",
+    "babel-polyfill": "^6.1.19",
+    "classnames": "^2.2.0",
+    "history": "^1.13.0",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-helmet": "^2.1.1",
+    "react-redux": "^4.0.0",
+    "react-router": "^1.0.0",
+    "redux": "^3.0.4",
+    "redux-simple-router": "^1.0.2",
+    "redux-thunk": "^1.0.0",
+    "url-join": "0.0.1"
+  },
+  "devDependencies": {
+    "babel": "^6.1.5",
+    "babel-core": "^6.1.4",
+    "babel-loader": "^6.1.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "dotenv": "^1.2.0",
+    "redux-devtools": "^3.0.0-beta-3",
+    "redux-devtools-dock-monitor": "^1.0.0-beta-3",
+    "redux-devtools-log-monitor": "^1.0.0-beta-3",
+    "webpack": "^1.12.4"
+  }
+}
