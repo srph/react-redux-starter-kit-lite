@@ -22,11 +22,7 @@ A less opinionated react+redux starter kit without server-side rendering and sty
 - Where's my `actions`, `reducers`, and `constants`? This repository follows [ducks-modular-redux](https://github.com/erikras/ducks-modular-redux).
 
 ## Installing
-Some requirements include:
-- [node](nodejs.org) / [npm](npmjs.com)
-- [ruby](ruby-lang.org) / [gems](rubygems.org) / [bundler](bundler.io)
-
-Afterwards, clone, and then run the following to install the dependencies:
+Clone, and then run the following to install the dependencies:
 ```bash
 npm install
 bundle install
