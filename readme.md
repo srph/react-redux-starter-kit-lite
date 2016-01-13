@@ -63,11 +63,6 @@ This is a server-only config.
 #### `_REDUX_DEVTOOLS_`
 Condition which Redux Devtools will be enabled.
 
-#### `_SSR_`
-The variable to check if the environment is node. This is safer than deriving by checking variables available only to node.
-
-This is explicitly set to each config (e.g., server globals, webpack config).
-
 #### `_IMG_`
 Path to your images folder.
 
