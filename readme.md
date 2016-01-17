@@ -43,6 +43,7 @@ By convention, env configs are surrounded with underscores (`_`) when used throu
 <sub>*Note*: If you don't have any `.env` file in the project root directory, run this: `cp .env.example .env`.</sub>
 
 |config|description|
+|----|----|
 |`_ENV_`|A global variable for `process.env.NODE_ENV`.|
 |`_PRODUCTION_`|`true` when `process.env.NODE_ENV` is set to `production`.|
 |`_DEV_`|`true` when `process.env.NODE_ENV` is **not** set to `production`.|
