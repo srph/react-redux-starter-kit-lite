@@ -34,36 +34,18 @@ npm install
 |`npm watch:script`|compile script and watch for changes|
 |`npm prod:script`|compile and uglify script|
 |`npm start`|compile script and open html|
+
 ## Configuration
-This starter kit uses a [dotenv](https://www.npmjs.com/package/dotenv-style) configuration. To start, simply copy `.env.example` to `.env`.
-```bash
-cp .env.example .env
-```
-Afterwards, modify as it suits your needs.
+We use [dotenv](https://www.npmjs.com/package/dotenv-style) configuration.
 
-#### `_ENV_`
-A global variable for `process.env.NODE_ENV`.
+By convention, env configs are surrounded with underscores (`_`) when used throughout the application (e.g., `API` -> `_API_`). For more information, checkout `build/webpack.config.js`.
 
-#### `_PRODUCTION_`
-`true` when `process.env.NODE_ENV` is set to `production`.
+<sub>*Note*: If you don't have any `.env` file in the project root directory, run this: `cp .env.example .env`.</sub>
 
-#### `_DEV_`
-`true` when `process.env.NODE_ENV` is **not** set to `production`.
-
-#### `_API_`
-The URI of the your API.
-
-Mainly used to concatenate your requests with a base URI in `common/utils/axios/interceptors/concatBaseUrl`.
-
-#### `_IMG_`
-Path to your images folder.
-
-This can be used as such : ````${_IMG_}/cat.jpg````.
-
-#### `_REDUX_DEVTOOLS_`
-Condition which Redux Devtools will be enabled.
-
-#### `_IMG_`
-Path to your images folder.
-
-This can be used as such : ````${_IMG_}/cat.jpg````.
+|config|description|
+|`_ENV_`|A global variable for `process.env.NODE_ENV`.|
+|`_PRODUCTION_`|`true` when `process.env.NODE_ENV` is set to `production`.|
+|`_DEV_`|`true` when `process.env.NODE_ENV` is **not** set to `production`.|
+|`_API_`|The URI of the your API. Mainly used to concatenate your requests with a base URI in `common/utils/axios/interceptors/concatBaseUrl`.|
+|`_IMG_`|Path to your images folder. This can be used as such : ````${_IMG_}/cat.jpg````.|
+|`_REDUX_DEVTOOLS_`|Condition which Redux Devtools will be enabled.|
