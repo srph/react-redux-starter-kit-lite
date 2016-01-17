@@ -28,22 +28,12 @@ npm install
 ```
 
 ## Development
-```bash
-npm run start # runs build script, style, and server
-
-# opens index file, watches / builds assets
-npm run dev
-
-# run server-side rendering
-npm run server
-
-# production-ready assets / run server
-npm start
-
-# run tests
-npm test # open up localhost:9876 afterwards
-```
-
+|command|description|
+|----|----|
+|`npm watch:build`|compile script|
+|`npm watch:script`|compile script and watch for changes|
+|`npm prod:script`|compile and uglify script|
+|`npm start`|compile script and open html|
 ## Configuration
 This starter kit uses a [dotenv](https://www.npmjs.com/package/dotenv-style) configuration. To start, simply copy `.env.example` to `.env`.
 ```bash
