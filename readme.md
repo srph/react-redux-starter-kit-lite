@@ -4,6 +4,8 @@ A less opinionated react+redux starter kit without server-side rendering and sty
 ## Deprecation Notice
 This boilerplate is the lite version of [react-redux-starter-kit](https://github.com/srph/react-redux-starter-kit). However, I recently decided to remove server-side rendering from the original boilerplate which makes this a redundant project.
 
+But if you insist on using it, you're own your own.
+
 ## Libraries
 **Mainly**:
 - [react](http://facebook.github.io/react) (`v0.14.2`)
